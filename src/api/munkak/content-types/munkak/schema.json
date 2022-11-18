@@ -1,0 +1,47 @@
+{
+  "kind": "collectionType",
+  "collectionName": "munkaks",
+  "info": {
+    "singularName": "munkak",
+    "pluralName": "munkaks",
+    "displayName": "munkak",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "nev": {
+      "type": "string",
+      "required": true,
+      "unique": true
+    },
+    "leiras": {
+      "type": "richtext",
+      "required": true
+    },
+    "kepek": {
+      "type": "media",
+      "multiple": true,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "category": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::category.category",
+      "inversedBy": "munkaks"
+    },
+    "ids": {
+      "type": "integer",
+      "required": true,
+      "unique": true
+    }
+  }
+}

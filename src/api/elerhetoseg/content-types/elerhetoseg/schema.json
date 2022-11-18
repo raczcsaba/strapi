@@ -1,0 +1,44 @@
+{
+  "kind": "collectionType",
+  "collectionName": "elerhetosegs",
+  "info": {
+    "singularName": "elerhetoseg",
+    "pluralName": "elerhetosegs",
+    "displayName": "elerhetoseg",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "nev": {
+      "type": "string",
+      "unique": true,
+      "required": false
+    },
+    "email": {
+      "type": "email"
+    },
+    "telefon": {
+      "type": "string"
+    },
+    "cegnev": {
+      "type": "string"
+    },
+    "cegadatok": {
+      "type": "richtext"
+    },
+    "profilkep": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "keplicencek": {
+      "type": "richtext"
+    }
+  }
+}

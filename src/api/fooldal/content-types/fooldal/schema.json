@@ -1,0 +1,44 @@
+{
+  "kind": "collectionType",
+  "collectionName": "fooldals",
+  "info": {
+    "singularName": "fooldal",
+    "pluralName": "fooldals",
+    "displayName": "oldalak",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "cim": {
+      "type": "string",
+      "required": true,
+      "unique": true
+    },
+    "leiras": {
+      "type": "richtext",
+      "required": true
+    },
+    "alcim": {
+      "type": "string",
+      "required": true
+    },
+    "altartalom": {
+      "type": "richtext",
+      "required": true
+    },
+    "kep": {
+      "type": "media",
+      "multiple": false,
+      "required": true,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "rovidszoveg": {
+      "type": "text"
+    }
+  }
+}
